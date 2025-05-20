@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<div class="container pt-10 pb-6">
+  <div class="row">
+    <div class="col-12 col-md-4 text-center">
+      {% if page.image %}
+        <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="img-fluid mb-3" style="max-width: 250px; border-radius: 50%;">
+      {% endif %}
+      <h2>{{ page.title }}</h2>
+      <p>{{ page.jobtitle }}</p>
+      
+      <div class="team-links">
+        {% if page.linkedinurl %}
+          <a href="{{ page.linkedinurl }}" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin fa-lg"></i> LinkedIn
+          </a><br>
+        {% endif %}
+        {% if page.githuburl %}
+          <a href="{{ page.githuburl }}" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github fa-lg"></i> GitHub
+          </a><br>
+        {% endif %}
+        {% if page.blogurl %}
+          <a href="{{ page.blogurl }}" target="_blank" aria-label="Blog personal">
+            <i class="fas fa-globe fa-lg"></i> Blog
+          </a><br>
+        {% endif %}
+      </div>
+    </div>
+    <div class="col-12 col-md-8">
+      <div class="team-content">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+</div>
