@@ -9,7 +9,10 @@
   z-index: 999;
   background-color: white; 
   box-shadow: 0 2px 6px rgba(255, 251, 249, 0.638); 
+
 }
+
+
 
 // Colors
 $primary: #FF9966;
@@ -20,6 +23,8 @@ $white: #ffffff;
 $white-offset: #EFEEEC;
 $steel: #9D8DFC;
 
+
+
 // Links
 $link-color: $primary-dark;
 $link-decoration: none;
@@ -27,7 +32,7 @@ $link-hover-color: lighten($primary, 10%);
 $link-hover-decoration: underline;
 
 // Fonts
-$font-family-base: Helvetica, Arial, AlbertSans, -apple-system;
+$font-family-base: Helvetica, Arial, "AlbertSans", -apple-system;
 $font-family-heading: "Jura", serif, -apple-system;
 
 // Footer
@@ -125,4 +130,16 @@ body {
     font-size: 16px;
     line-height: 1.3;
   }
+}
+
+h1, h2, h3 {
+  word-break: break-word;
+  line-height: 1.2;
+}
+
+
+.service-summary:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }

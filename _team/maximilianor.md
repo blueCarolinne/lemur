@@ -1,6 +1,6 @@
 ---
 title: "Maximiliano Ramírez"
-image: "images/team/joseph-gonzalez-399972-unsplash.jpg"
+image: "images/team/generico-M.jpg"
 jobtitle: "Ayudante - Curso Mecatrónica"
 category: estudiante
 linkedinurl: ""

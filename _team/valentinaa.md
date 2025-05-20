@@ -1,6 +1,6 @@
 ---
 title: "Valentina Abarca González"
-image: "images/team/joseph-gonzalez-399972-unsplash.jpg"
+image: "images/team/generico-F.jpg"
 jobtitle: "Ayudante - Curso Robótica"
 category: estudiante
 linkedinurl: ""

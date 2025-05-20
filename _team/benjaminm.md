@@ -1,6 +1,6 @@
 ---
 title: "Benjamin Merino Matus de la Parra"
-image: "images/team/joseph-gonzalez-399972-unsplash.jpg"
+image: "images/team/generico-M.jpg"
 jobtitle: "Ayudante - Curso Robótica"
 category: estudiante
 linkedinurl: ""

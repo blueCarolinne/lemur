@@ -1,6 +1,6 @@
 ---
 title: "Nicole Ortiz"
-image: "images/team/joseph-gonzalez-399972-unsplash.jpg"
+image: "images/team/generico-F.jpg"
 jobtitle: "Ayudante - Curso Mecatrónica"
 category: estudiante
 linkedinurl: ""

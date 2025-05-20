@@ -1,6 +1,6 @@
 ---
 title: "Randy Bartolo"
-image: "images/team/joseph-gonzalez-399972-unsplash.jpg"
+image: "images/team/generico-M.jpg"
 jobtitle: "Ayudante - Curso Mecatrónica"
 category: estudiante
 linkedinurl: ""
