@@ -7,20 +7,22 @@ intro_image_absolute: true
 intro_image_hide_on_mobile: false
 ---
 
+
+
 # Profesores
 
-{% assign profesores = site.team | where: "category", "profesor" %}
-<div class="_team-grid">
-  {% for person in profesores %}
+{% assign profesor = site.team | where: "category", "profesor" %}
+<div class="team-grid">
+  {% for person in profesor %}
     {% include team-member.html member=person %}
   {% endfor %}
 </div>
 
 # Estudiantes
 
-{% assign estudiantes = site.team | where: "category", "estudiante" %}
+{% assign estudiante = site.team | where: "category", "estudiante" %}
 <div class="team-grid">
-  {% for person in estudiantes %}
+  {% for person in estudiante %}
     {% include team-member.html member=person %}
   {% endfor %}
 </div>

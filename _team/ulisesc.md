@@ -1,9 +1,11 @@
 ---
-title: "Robert Johnson"
-date: 2018-12-20T13:44:23+10:00
-image: "images/team/vince-fleming-613817-unsplash.jpg"
-jobtitle: "Developer"
-linkedinurl: "https://www.linkedin.com/"
+title: "Ulises Campodónico"
+date: 2018-12-20T13:45:06+10:00
+image: "images/team/cristian-newman-94319-unsplash.jpg"
+jobtitle: "Profesor"
+category: profesor
+promoted: true
+linkedinurl: ""
 weight: 3
 ---
 

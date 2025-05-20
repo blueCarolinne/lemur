@@ -1,7 +1,7 @@
 baseurl: ""
 url: "https://bluecarolinne.github.io"
 permalink: pretty
-title: 'Jekyll Serif'
+title: 'LEMUR'
 
 logo:
   mobile: "images/logo/logo-mobile.svg"
@@ -12,7 +12,8 @@ logo:
   desktop_width: "120px"
 
 home: 
-  limit_services: 6
+  limit_services: 3
+  limit_team: 4
 
 collections:
   services:
