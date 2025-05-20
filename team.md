@@ -1,12 +1,25 @@
 ---
-title: Team
+title: Equipo
 layout: teams
-description: Team
+description: Nuestro equipo
 permalink: "/team/"
 intro_image_absolute: true
 intro_image_hide_on_mobile: false
 ---
+# Profesores
 
-# Meet The Team
+{% assign profesores = site.team | where: "category", "profesor" %}
+<div class="team-grid">
+  {% for person in profesores %}
+    {% include team-member.html member=person %}
+  {% endfor %}
+</div>
 
-Our team of qualified accountants and financial consultants can help your business at any stage of it's growth.
+# Estudiantes
+
+{% assign estudiantes = site.team | where: "category", "estudiante" %}
+<div class="team-grid">
+  {% for person in estudiantes %}
+    {% include team-member.html member=person %}
+  {% endfor %}
+</div>
