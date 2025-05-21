@@ -22,18 +22,18 @@ $black: #000000;
 $white: #ffffff;
 $white-offset: #EFEEEC;
 $steel: #565049;
-$cyan: #45DDED;
+$cyan: #38aebb;
 
 
 
 // Links
-$link-color: $primary-dark;
+$link-color: $cyan;
 $link-decoration: none;
 $link-hover-color: lighten($primary, 10%);
 $link-hover-decoration: underline;
 
 // Fonts
-$font-family-base: Helvetica, Arial, "AlbertSans", -apple-system;
+$font-family-base: "AlbertSans", Helvetica, Arial, "AlbertSans", -apple-system;
 $font-family-heading: "Jura", serif, -apple-system;
 
 // Footer
@@ -140,13 +140,13 @@ h1, h2, h3 {
 
 
 .team-profesor {
-  border-left: 5px solid $steel;
-  background-color: #f5f8ff;
+  border-left: 8px solid $cyan;
+  background-color: #cbcbc8;
 }
 
 .team-estudiante {
   border-left: 5px solid $primary;
-  background-color: #fff8f5;
+  background-color: #fcf8f7;
 }
 
 
@@ -182,4 +182,37 @@ h1, h2, h3 {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+
+.section-title {
+  text-align: center;
+  font-family: $font-family-heading;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: $primary;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+//menu presionado colores
+.main-menu li a {
+  text-decoration: none;
+  color: $primary-dark;
+  transition: color 0.3s ease;
+}
+
+.main-menu li a:hover {
+  color: $primary;
+}
+
+.main-menu li.active a {
+  color: $primary;
+  font-weight: bold;
+  border-bottom: 2px solid $primary;
+}
+
+.page-title {
+  font-family: $font-family-heading;
+  color: $primary;
 }

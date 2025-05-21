@@ -1,16 +1,13 @@
 ---
-title: Tesis de investigación y Proyectos
+
 layout: page
 description: About
 bodyClass: page-about
 ---
 
-Presentaremos pronto los proyectos desarrollados en el Laboratorio LEMUR.
-
-
 # Propuesta de Tesis
 
-Próximamente haremos una invitación a desarrollar temas de investigación para pre-grado para el semestre Primavera 2025.
+Próximamente se invitará a desarrollar temas de investigación para pre-grado.
 
 # Lista de Tesistas
 

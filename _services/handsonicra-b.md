@@ -14,4 +14,4 @@ El taller aborda las decisiones de diseño, cálculo, armado y control en lazo c
 
 ## Material de apoyo
 
-- Github
+- [Github](https://github.com/LabRobDIMEC/ICRA_LA_CHILE_HO1b)

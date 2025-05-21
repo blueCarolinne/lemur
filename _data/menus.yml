@@ -1,16 +1,13 @@
 main:
-  - name: "Actividades"
+  - name: "Actividades y Proyectos"
     url: "/services/"
     weight: 2
   - name: "Equipo"
     url: "/team/"
     weight: 3
-  - name: "Tesis"
+  - name: "Investigación"
     url: "/about/"
     weight: 4
-  - name: "Contacto"
-    url: "/contact/"
-    weight: 5
 
 footer:
   - name: "Inicio"

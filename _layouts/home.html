@@ -19,9 +19,22 @@ bodyClass: "page-home"
   </div>
 </div>
 
+{% if site.data.features %}
+<div class="strip strip-grey">
+  <div class="container pt-3 pb-3 pt-md-3 pb-md-3">
+    <div class="research-rotator text-center">
+      <h2>Líneas de investigación</h2>
+    <div class="rotating-word fade-in">🐙 Robótica Blanda</div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+
 <div class="strip">
   <div class="container pt-6 pb-6 pb-md-10">
     <div class="row justify-content-start">
+      <h2 class="section-title">ACTIVIDADES</h2>
       {% assign limit = site.home.limit_services | default: 6 %}
       {% for service in site.services limit: limit %}
       <div class="col-12 col-md-4 mb-1">
@@ -47,6 +60,7 @@ bodyClass: "page-home"
 <div class="strip">
   <div class="container pt-6 pb-6 pb-md-10">
     <div class="row justify-content-start">
+      <h2 class="section-title">EQUIPO</h2>
       {% assign profesores = site.team | where: "category", "profesor" | sort: "weight" | slice: 0, 4 %}
       {% for member in profesores %}
       <div class="col-12 col-md-3 mb-1">
@@ -88,13 +102,4 @@ bodyClass: "page-home"
 </div>
 
 
-{% if site.data.features %}
-<div class="strip strip-grey">
-  <div class="container pt-6 pb-6 pt-md-10 pb-md-10">
-    <div class="research-rotator text-center">
-      <h2 class="rotator-title">Líneas de investigación</h2>
-    <div class="rotating-word fade-in">🐙 Robótica Blanda</div>
-    </div>
-  </div>
-</div>
-{% endif %}
+
