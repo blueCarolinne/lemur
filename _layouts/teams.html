@@ -23,29 +23,31 @@ bodyClass: "page-teams"
     <div class="row">
         {% assign promoted_teams = site.team | where: "promoted", true | sort: "weight" %}
         {% for team in promoted_teams %}
-        <div class="col-12 col-md-6 mb-2">
-            <div class="team team-summary team-summary-large">
-                {% if team.image %}
-                <div class="team-image">
-                    <img width="90" height="90" alt="{{ team.title }}" class="img-fluid mb-2" src="{{ team.image | relative_url }}" />
-                </div>
+            <div class="col-12 col-md-6 mb-2">
+                <div class="team team-summary team-summary-large 
+                    {% if team.category == "profesor" %}team-profesor{% endif %}
+                    {% if team.category == "estudiante" %}team-estudiante{% endif %}">
+                    {% if team.image %}
+                    <div class="team-image">
+                        <img width="90" height="90" alt="{{ team.title }}" class="img-fluid mb-2" src="{{ team.image | relative_url }}" />
+                    </div>
                 {% endif %}
  
-               <div class="team-meta">
+                <div class="team-meta">
                   <h2 class="team-name"><a href="{{ team.url | relative_url }}">{{ team.title }}</a></h2>
-        <p class="team-description">{{ team.jobtitle }}</p>
-  <div class="team-links">
-    {% if team.linkedinurl %}
-      <a target="_blank" href="{{ team.linkedinurl }}" rel="noreferrer">LinkedIn</a>
-    {% endif %}
-    {% if team.githuburl %}
-      · <a target="_blank" href="{{ team.githuburl }}" rel="noreferrer">GitHub</a>
-    {% endif %}
-    {% if team.blogurl %}
-      · <a target="_blank" href="{{ team.blogurl }}" rel="noreferrer">Blog</a>
-    {% endif %}
-  </div>
-</div>
+                    <p class="team-description">{{ team.jobtitle }}</p>
+                <div class="team-links">
+                        {% if team.linkedinurl %}
+                        <a target="_blank" href="{{ team.linkedinurl }}" rel="noreferrer">LinkedIn</a>
+                        {% endif %}
+                        {% if team.githuburl %}
+                        · <a target="_blank" href="{{ team.githuburl }}" rel="noreferrer">GitHub</a>
+                        {% endif %}
+                        {% if team.blogurl %}
+                        · <a target="_blank" href="{{ team.blogurl }}" rel="noreferrer">Blog</a>
+                        {% endif %}
+                    </div>
+                </div>
 
                 <div class="team-content">{{ team.excerpt | truncate: 120 }}</div>
             </div>

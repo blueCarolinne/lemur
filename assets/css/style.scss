@@ -21,7 +21,8 @@ $secondary: #9D8DFC;
 $black: #000000;
 $white: #ffffff;
 $white-offset: #EFEEEC;
-$steel: #9D8DFC;
+$steel: #565049;
+$cyan: #45DDED;
 
 
 
@@ -138,8 +139,47 @@ h1, h2, h3 {
 }
 
 
-.service-summary:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
+.team-profesor {
+  border-left: 5px solid $steel;
+  background-color: #f5f8ff;
+}
+
+.team-estudiante {
+  border-left: 5px solid $primary;
+  background-color: #fff8f5;
+}
+
+
+.research-rotator {
+  margin-bottom: 2rem;
+
+  .rotator-title {
+    font-family: $font-family-heading;
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+    color: $primary-dark;
+  }
+
+  .rotating-word {
+    font-family: $font-family-heading;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: $primary;
+    transition: opacity 0.4s ease;
+  }
+
+  .fade-in {
+    animation: fadeInWord 0.4s ease;
+  }
+}
+
+@keyframes fadeInWord {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

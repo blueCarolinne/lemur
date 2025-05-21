@@ -40,5 +40,29 @@
   {% include sub-footer.html %}
   <script type="text/javascript" src="{{ '/assets/js/scripts.js' | relative_url }}"></script>
   {% include google-analytics.html %}
+
+<!-- animacion - lineas de investigacion HOME -->
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const palabras = [
+      "🐙 Robótica Blanda",
+      "🤖 Manipulación Robótica",
+      "🔧 Diseño Mecánico"
+    ];
+    const span = document.querySelector(".rotating-word");
+    let i = 0;
+
+    setInterval(() => {
+      i = (i + 1) % palabras.length;
+      span.classList.remove("fade-in");
+      void span.offsetWidth; // reinicia la animación
+      span.textContent = palabras[i];
+      span.classList.add("fade-in");
+    }, 2000);
+  });
+</script>
+
+
+
 </body>
 </html>
