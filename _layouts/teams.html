@@ -57,7 +57,7 @@ bodyClass: "page-teams"
     </div>
     <div class="row pt-6 pb-6">
         <h2 class="section-title text-center mt-6">Estudiantes</h2>
-        {% assign teams = site.team | where: "promoted", empty | sort: "weight" %}
+        {% assign teams = site.team | where: "promoted", false | sort: "weight" %}
         {% for team in teams %}
         <div class="col-12 col-md-6 mb-2">
             <div class="team team-summary">
