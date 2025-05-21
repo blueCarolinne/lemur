@@ -21,7 +21,7 @@ bodyClass: "page-teams"
 
 <div class="container pt-12 pb-6">
     <div class="row">
-        
+        <h2 class="section-title text-center">Profesores</h2>
         {% assign promoted_teams = site.team | where: "promoted", true | sort: "weight" %}
         {% for team in promoted_teams %}
             <div class="col-12 col-md-6 mb-2">
@@ -56,8 +56,8 @@ bodyClass: "page-teams"
         {% endfor %}
     </div>
     <div class="row pt-6 pb-6">
-        
-        {% assign teams = site.team | where: "promoted", false | sort: "weight" %}
+        <h2 class="section-title text-center mt-6">Estudiantes</h2>
+        {% assign teams = site.team | where: "promoted", empty | sort: "weight" %}
         {% for team in teams %}
         <div class="col-12 col-md-6 mb-2">
             <div class="team team-summary">
